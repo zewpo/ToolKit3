@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxPanel" name="SQLPanel">
+		<size>272,187</size>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<handler function="OnPaint" entry="EVT_PAINT" />
+		<object class="wxFlexGridSizer" variable="FlexGridSizer1" member="no">
+			<cols>1</cols>
+			<rows>2</rows>
+			<growablecols>0</growablecols>
+			<growablerows>1</growablerows>
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<object class="wxFlexGridSizer" variable="FlexGridSizer2" member="no">
+						<cols>5</cols>
+						<rows>1</rows>
+						<object class="sizeritem">
+							<object class="wxBitmapButton" name="ID_EXECUTEBUTTON" variable="ExecuteButton" member="yes">
+								<bitmap stock_id="wxART_GO_FORWARD" stock_client="wxART_FRAME_ICON" />
+								<handler function="OnExecuteButtonClick" entry="EVT_BUTTON" />
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>1</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxBitmapButton" name="ID_CANCELBUTTON" variable="CancelButton" member="yes">
+								<bitmap stock_id="wxART_ERROR" stock_client="wxART_FRAME_ICON" />
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>1</border>
+							<option>1</option>
+						</object>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL2" variable="Panel2" member="yes">
+					<object class="wxFlexGridSizer" variable="FlexGridSizer3" member="no">
+						<cols>1</cols>
+						<rows>1</rows>
+						<growablecols>0</growablecols>
+						<growablerows>0</growablerows>
+						<object class="sizeritem">
+							<object class="Custom" name="ID_STYLEDTEXTCTRL" subclass="wxStyledTextCtrl" variable="styledTextCtrl " member="yes">
+								<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),0,$(NAME));</creating_code>
+								<style></style>
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>2</border>
+							<option>1</option>
+						</object>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>1</border>
+				<option>1</option>
+			</object>
+		</object>
+		<object class="wxMenu" variable="MenuSQL" member="yes">
+			<object class="wxMenuItem" name="ID_MENUITEMSQLFILE" variable="MenuItemSQLFile" member="yes">
+				<label>File</label>
+				<help>File</help>
+				<bitmap stock_id="wxART_FILE_OPEN" stock_client="wxART_BUTTON" />
+			</object>
+			<object class="wxMenuItem" name="Execute" variable="MenuItem1" member="yes">
+				<label>Execute</label>
+				<help>Execute SQL</help>
+				<checkable>1</checkable>
+			</object>
+		</object>
+	</object>
+</wxsmith>

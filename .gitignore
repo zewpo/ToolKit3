@@ -1,0 +1,12 @@
+bin/Debug/log.out
+*.sqlite
+bin/Debug/ToolKit3.exe
+*.o
+obj/Debug/resource.res
+output.log
+*.cbp
+ToolKit3.cscope_file_list
+ToolKit3.depend
+ToolKit3.layout
+wx_pch.h.gch/Debug_wx_pch_h_gch
+include/wx_pch.h.gch

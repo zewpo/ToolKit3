@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="SettingsFrame">
+		<title>Settings</title>
+		<centered>1</centered>
+		<icon stock_id="wxART_EXECUTABLE_FILE" stock_client="wxART_FRAME_ICON" />
+		<size>600,553</size>
+		<id_arg>0</id_arg>
+		<handler function="OnPaint" entry="EVT_PAINT" />
+		<object class="wxFlexGridSizer" variable="FlexGridSizer1" member="no">
+			<cols>1</cols>
+			<rows>1</rows>
+			<growablecols>0</growablecols>
+			<growablerows>0</growablerows>
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<minsize>-1,-1</minsize>
+					<maxsize>-1,-1</maxsize>
+					<object class="wxFlexGridSizer" variable="FlexGridSizer2" member="no">
+						<cols>1</cols>
+						<rows>3</rows>
+						<growablecols>0</growablecols>
+						<growablerows>2</growablerows>
+						<object class="sizeritem">
+							<object class="wxPanel" name="ID_PANEL2" variable="Panel2" member="yes">
+								<minsize>-1,-1</minsize>
+								<maxsize>-1,-1</maxsize>
+								<object class="wxFlexGridSizer" variable="FlexGridSizer3" member="no">
+									<cols>3</cols>
+									<growablecols>0,1,2</growablecols>
+									<growablerows>0</growablerows>
+								</object>
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>2</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxSearchCtrl" name="ID_SEARCHCTRL1" variable="SearchCtrl1" member="yes">
+								<minsize>-1,-1</minsize>
+								<maxsize>-1,-1</maxsize>
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>2</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxGrid" name="ID_GRID_SETTINGS" variable="Grid_Settings" member="yes">
+								<cols>2</cols>
+								<labelcolwidth>20</labelcolwidth>
+								<minsize>-1,-1</minsize>
+								<maxsize>-1,-1</maxsize>
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>2</border>
+							<option>1</option>
+						</object>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND</flag>
+				<option>1</option>
+			</object>
+		</object>
+		<object class="wxToolBar" name="ID_TOOLBAR1" variable="ToolBar1" member="yes">
+			<object class="tool" name="Button_Save_Settings" variable="ToolBarItem1" member="yes">
+				<label>Save Settings</label>
+				<bitmap stock_id="wxART_FILE_SAVE" stock_client="wxART_BUTTON" />
+				<bitmap2 stock_id="wxART_FILE_SAVE" stock_client="wxART_BUTTON" />
+				<tooltip>Save Settings</tooltip>
+				<handler function="OnSaveButtonClicked" entry="EVT_TOOL" />
+			</object>
+		</object>
+	</object>
+</wxsmith>
